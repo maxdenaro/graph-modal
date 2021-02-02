@@ -177,17 +177,3 @@ class GraphModal {
 		document.body.style.paddingRight = '0px';
 	}
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-	const modal = new GraphModal({
-		isOpen: (modal) => {
-			console.log('opened');
-		},
-		isClose: () => {
-			console.log('closed');
-		}
-	});
-
-// new Modal().open('second');
-});
-
