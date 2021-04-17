@@ -6,8 +6,8 @@ class GraphModal {
 		}
 		this.options = Object.assign(defaultOptions, options);
 		this.modal = document.querySelector('.modal');
-		this.speed = false;
-		this.animation = false;
+		this.speed = 300;
+		this.animation = 'fade';
 		this._reOpen = false;
 		this._nextContainer = false;
 		this.modalContainer = false;
@@ -49,10 +49,8 @@ class GraphModal {
 			}.bind(this));
 
 			window.addEventListener('keydown', function(e) {
-				if (e.keyCode == 27) {
-					if (this.modalContainer.classList.contains('modal-open')) {
-						this.close();
-					}
+				if (e.keyCode == 27 && this.isOpen) {
+					this.close();
 				}
 
 				if (e.which == 9 && this.isOpen) {
