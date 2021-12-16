@@ -59,8 +59,8 @@ class GraphModal {
 				}
 			}.bind(this));
 
-			this.modal.addEventListener('click', function(e) {
-				if (!e.target.classList.contains('modal__container') && !e.target.closest('.modal__container') && this.isOpen) {
+			document.addEventListener('click', function(e) {
+				if (e.target.classList.contains('modal') && e.target.classList.contains("is-open")) {
 					this.close();
 				}
 			}.bind(this));
