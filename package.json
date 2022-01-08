@@ -1,0 +1,23 @@
+{
+  "name": "graph-modal",
+  "version": "1.0.0",
+  "description": "Simple JS Library for modal windows",
+  "main": "index.js",
+  "scripts": {
+    "test": "command for testing package"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxdenaro/graph-modal"
+  },
+  "keywords": [
+    "graph",
+    "modal"
+  ],
+  "author": "MaxGraph",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxdenaro/graph-modal/issues"
+  },
+  "homepage": "https://github.com/maxdenaro/graph-modal#readme"
+}
