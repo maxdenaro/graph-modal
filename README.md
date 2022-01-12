@@ -16,10 +16,10 @@
 2. Подключите graph-modal.min.css и graph-modal.min.js из папки dist к странице
 3. Поместите в ваш html-документ следующую разметку:
 ```html
-<div class="modal">
-	<div class="modal__container" role="dialog" aria-modal="true" data-graph-target="first">
-		<button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
-		<div class="modal-content">
+<div class="graph-modal">
+	<div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="first">
+		<button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
+		<div class="graph-modal__content">
 			<!-- контент модального окна -->
 		</div>
 	</div>
@@ -27,11 +27,11 @@
 ```
 ### Важные нюансы селекторов
 
-`.modal` - Элемент окна-родителя для других модальных окон, то есть в него вкладываются все модальные окна на сайте, которые вам нужны. Также является "затемнением" сайта при открытии окна.
+`.graph-modal` - Элемент окна-родителя для других модальных окон, то есть в него вкладываются все модальные окна на сайте, которые вам нужны. Также является "затемнением" сайта при открытии окна.
 
-`.modal__container` - Элемент самого модального окна. Имеет атрибут `[data-graph-target]`, предназначенный для связи с открывающей кнопкой.
+`.graph-modal__container` - Элемент самого модального окна. Имеет атрибут `[data-graph-target]`, предназначенный для связи с открывающей кнопкой.
 
-`.modal__close` - Элемент, закрывающий текущее модальное окно.
+`.graph-modal__close` - Элемент, закрывающий текущее модальное окно.
 
 4. Разместите следующий JS-код для подключения модального окна:
 
