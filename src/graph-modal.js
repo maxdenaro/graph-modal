@@ -42,7 +42,7 @@ export default class GraphModal {
           return;
         }
 
-        if (e.target.closest('.graph-modal__close')) {
+        if (e.target.closest('.js-modal-close')) {
           this.close();
           return;
         }
