@@ -18,7 +18,7 @@
 ```html
 <div class="graph-modal">
 	<div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="first">
-		<button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
+		<button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
 		<div class="graph-modal__content">
 			<!-- контент модального окна -->
 		</div>
