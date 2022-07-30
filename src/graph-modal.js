@@ -99,6 +99,7 @@ export default class GraphModal {
       this.modalContainer.classList.add('animate-open');
       this.isOpen = true;
       this.focusTrap();
+      this.modalContainer.querySelector("input")?.focus()
     }, this.speed);
   }
 
