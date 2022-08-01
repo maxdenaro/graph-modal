@@ -82,6 +82,8 @@ export default class GraphModal {
     if (selector) {
       this.modalContainer = document.querySelector(`[data-graph-target="${selector}"]`);
     }
+    
+    this.modalContainer.scrollTo(0, 0)
 
     this.modal.style.setProperty('--transition-time', `${this.speed / 1000}s`);
     this.modal.classList.add('is-open');
