@@ -163,7 +163,7 @@ export default class GraphModal {
     this.unlockPadding();
     document.body.style.top = 'auto';
     document.body.classList.remove('disable-scroll');
-    window.scroll({
+    window.scrollTo({
       top: pagePosition,
       left: 0
     });
