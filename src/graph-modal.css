@@ -21,39 +21,28 @@ html {
 .graph-modal {
   --transition-time: 0.3s;
   position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   z-index: 1000;
+	display: flex;
+	padding: 30px 0;
   background-color: rgba(0, 0, 0, 0.7);
   cursor: pointer;
   overflow-y: auto;
   overflow-x: hidden;
-  text-align: center;
   opacity: 0;
   visibility: hidden;
   transition: opacity var(--transition-time), visibility var(--transition-time);
 }
 
-.graph-modal::before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
-}
-
 .graph-modal__container {
   position: relative;
   width: 1000px;
-  margin: 50px auto;
-  display: inline-block;
-  vertical-align: middle;
+  margin: auto;
+  display: block;
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
   cursor: default;
-  text-align: left;
   display: none;
 }
 
@@ -83,7 +72,7 @@ html {
 }
 
 .graph-modal__container.graph-modal-open {
-  display: inline-block;
+  display: block;
 }
 
 .fade {
